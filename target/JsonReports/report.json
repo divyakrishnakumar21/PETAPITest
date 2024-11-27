@@ -1,0 +1,536 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-11-27T01:36:58.710Z",
+        "line": 6,
+        "name": "As a user I create a new PET",
+        "description": "",
+        "id": "test-all-journey-planner-api;as-a-user-i-create-a-new-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I create a new PET with name \u0027dog\u0027 and type \u0027hound\u0027 and age 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog\u0027",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027hound\u0027",
+                  "offset": 44
+                },
+                {
+                  "val": "3",
+                  "offset": 60
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.createNewPET(java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I check if the PET with name \u0027dog\u0027 has been added into the list of Pets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.validateAddedPET(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITests"
+          },
+          {
+            "name": "@APITest1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-27T01:36:58.787Z",
+        "line": 11,
+        "name": "As a user I create a new PET and modify its age",
+        "description": "",
+        "id": "test-all-journey-planner-api;as-a-user-i-create-a-new-pet-and-modify-its-age",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I create a new PET with name \u0027dog1\u0027 and type \u0027hound1\u0027 and age 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog1\u0027",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027hound1\u0027",
+                  "offset": 45
+                },
+                {
+                  "val": "3",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.createNewPET(java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I check if the PET with name \u0027dog1\u0027 has been added into the list of Pets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog1\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.validateAddedPET(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Update the PET \u0027dog1\u0027 with age 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog1\u0027",
+                  "offset": 15
+                },
+                {
+                  "val": "4",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.updatePETAge(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validate if the PET with name \u0027dog\u0027 has its age updated to 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog\u0027",
+                  "offset": 30
+                },
+                {
+                  "val": "4",
+                  "offset": 59
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.validateUpdatedPET(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITests"
+          },
+          {
+            "name": "@APITest2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-27T01:36:58.803Z",
+        "line": 25,
+        "name": "As a user I create a new PET",
+        "description": "",
+        "id": "test-all-journey-planner-api;as-a-user-i-create-a-new-pet;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I create a new PET with name \u0027dog2\u0027 and type \u0027hound2\u0027 and age 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog2\u0027",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027hound2\u0027",
+                  "offset": 45
+                },
+                {
+                  "val": "4",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.createNewPET(java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I check if the PET with name \u0027dog2\u0027 has been added into the list of Pets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog2\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.validateAddedPET(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITests"
+          },
+          {
+            "name": "@APITest3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-27T01:36:58.812Z",
+        "line": 26,
+        "name": "As a user I create a new PET",
+        "description": "",
+        "id": "test-all-journey-planner-api;as-a-user-i-create-a-new-pet;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I create a new PET with name \u0027cat\u0027 and type \u0027tiger\u0027 and age 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027cat\u0027",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027tiger\u0027",
+                  "offset": 44
+                },
+                {
+                  "val": "5",
+                  "offset": 60
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.createNewPET(java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I check if the PET with name \u0027cat\u0027 has been added into the list of Pets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027cat\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.validateAddedPET(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITests"
+          },
+          {
+            "name": "@APITest3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-27T01:36:58.820Z",
+        "line": 27,
+        "name": "As a user I create a new PET",
+        "description": "",
+        "id": "test-all-journey-planner-api;as-a-user-i-create-a-new-pet;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I create a new PET with name \u0027snake\u0027 and type \u0027reptile\u0027 and age 25",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027snake\u0027",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027reptile\u0027",
+                  "offset": 46
+                },
+                {
+                  "val": "25",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.createNewPET(java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I check if the PET with name \u0027snake\u0027 has been added into the list of Pets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027snake\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.validateAddedPET(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITests"
+          },
+          {
+            "name": "@APITest3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-27T01:36:58.825Z",
+        "line": 28,
+        "name": "As a user I create a new PET",
+        "description": "",
+        "id": "test-all-journey-planner-api;as-a-user-i-create-a-new-pet;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I create a new PET with name \u0027rabbit\u0027 and type \u0027white\u0027 and age 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027rabbit\u0027",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027white\u0027",
+                  "offset": 47
+                },
+                {
+                  "val": "1",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.createNewPET(java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I check if the PET with name \u0027rabbit\u0027 has been added into the list of Pets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027rabbit\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.validateAddedPET(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITests"
+          },
+          {
+            "name": "@APITest3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-27T01:36:58.832Z",
+        "line": 31,
+        "name": "As a user I create a new PET and delete it",
+        "description": "",
+        "id": "test-all-journey-planner-api;as-a-user-i-create-a-new-pet-and-delete-it",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I create a new PET with name \u0027dog3\u0027 and type \u0027hound3\u0027 and age 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog3\u0027",
+                  "offset": 29
+                },
+                {
+                  "val": "\u0027hound3\u0027",
+                  "offset": 45
+                },
+                {
+                  "val": "3",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.createNewPET(java.lang.String,java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I check if the PET with name \u0027dog3\u0027 has been added into the list of Pets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog3\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.validateAddedPET(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I delete the pet with name \u0027dog3\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog3\u0027",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.deletePET(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I validate if the pet with name \u0027dog3\u0027 has been deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027dog3\u0027",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinitions.APISmokeTestDefinition.validateDeletedPET(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APITests"
+          },
+          {
+            "name": "@APITest4"
+          }
+        ]
+      }
+    ],
+    "name": "Test all Journey planner API",
+    "description": "",
+    "id": "test-all-journey-planner-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/APITests.feature",
+    "tags": [
+      {
+        "name": "@APITests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
