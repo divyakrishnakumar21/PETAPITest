@@ -11,8 +11,7 @@ Feature: Test Pet creation API
   Scenario: As a user I create a new PET and modify its age
     Given I create a new PET with name 'dog1' and type 'hound1' and age 3
     Then I check if the PET with name 'dog1' has been added into the list of Pets
-    When Update the PET 'dog1' with age 4
-    Then validate if the PET with name 'dog' has its age updated to 4
+    Then Update the PET 'dog1' and type 'hound1' with age 4
  
    @APITest3
   Scenario Outline: As a user I create a new PET 

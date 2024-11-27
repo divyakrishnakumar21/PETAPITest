@@ -17,11 +17,13 @@ public class BaseSetup {
 	public static Properties prop = null;
 	  public static Utilities utilities = new Utilities();
 	  public static APIHelpers apiHelpers = new APIHelpers();
+	  
+	public static String baseURL = "";
     
 	public static void baseConfigurationSetup() throws IOException
 	{		prop= utilities.readPropertiesFile("TestData.properties");
-
-
+   
+	        baseURL = prop.getProperty("endpointURL");
 
 	}
 

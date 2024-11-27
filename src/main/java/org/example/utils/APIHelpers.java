@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 public class APIHelpers extends BaseSetup {
 
 
-	public void get(String getBaseURL) throws IOException
+	public Response get(String getBaseURL) throws IOException
 	{
 		//Get call
 		System.out.println("\n");
@@ -22,6 +22,7 @@ public class APIHelpers extends BaseSetup {
 				.when().get(getBaseURL);
 		System.out.println("Response code is " +response.getStatusCode());
 		System.out.println("Response Body of the API call is "+response.body().asString());
+		return response;
 	}
 
 	public Response getWithHeaders(String getBaseURL, Map<String,Object> list) throws IOException
@@ -126,7 +127,7 @@ public class APIHelpers extends BaseSetup {
 		return response;
 	}
 	
-	public void delete(String getBaseURL) throws IOException
+	public Response delete(String getBaseURL) throws IOException
 	{
 		//Get call
 		System.out.println("\n");
@@ -136,6 +137,7 @@ public class APIHelpers extends BaseSetup {
 				.when().delete(getBaseURL);
 		System.out.println("Response code is " +response.getStatusCode());
 		System.out.println("Response Body of the API call is "+response.body().asString());
+		return response;
 	}
 	
 	

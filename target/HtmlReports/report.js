@@ -1,6 +1,6 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/APITests.feature");
 formatter.feature({
-  "name": "Test all Journey planner API",
+  "name": "Test Pet creation API",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -76,21 +76,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Update the PET \u0027dog1\u0027 with age 4",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "StepDefinitions.APISmokeTestDefinition.updatePETAge(java.lang.String,java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "validate if the PET with name \u0027dog\u0027 has its age updated to 4",
+  "name": "Update the PET \u0027dog1\u0027 and type \u0027hound1\u0027 with age 4",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinitions.APISmokeTestDefinition.validateUpdatedPET(java.lang.String,java.lang.Integer)"
+  "location": "StepDefinitions.APISmokeTestDefinition.updatePETAge(java.lang.String,java.lang.String,java.lang.Integer)"
 });
 formatter.result({
   "status": "passed"
@@ -311,7 +301,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I check if the PET with name \u0027dog3\u0027 has been added into the list of Pets",
+  "name": "I check if the PET with name \u0027dog\u0027 has been added into the list of Pets",
   "keyword": "Then "
 });
 formatter.match({

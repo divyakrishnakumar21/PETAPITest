@@ -18,28 +18,27 @@ public class APISmokeTestDefinition {
 	}
 
 	@Then("I check if the PET with name {string} has been added into the list of Pets")
-	public void validateAddedPET(String petName) {
+	public void validateAddedPET(String petName) throws IOException {
+		apiData.validatePETAddOrDelete(petName, true);
 	
 	}
 
-	@When("Update the PET {string} with age {int}")
-	public void updatePETAge(String petName, Integer age) {
+	@When("Update the PET {string} and type {string} with age {int}")
+	public void updatePETAge(String petName, String petType, Integer age) throws IOException {
+		apiData.updatePETAge(petName, petType, age);
 	
 	}
 
-	@Then("validate if the PET with name {string} has its age updated to {int}")
-	public void validateUpdatedPET(String petName, Integer age) {
-	
-	}
 
 	@When("I delete the pet with name {string}")
-	public void deletePET(String petName) {
+	public void deletePET(String petName) throws IOException {
+		apiData.deletePetbyID(petName);
 
 	}
 
 	@Then("I validate if the pet with name {string} has been deleted")
-	public void validateDeletedPET(String petName) {
-	 
+	public void validateDeletedPET(String petName) throws IOException {
+		apiData.validatePETAddOrDelete(petName, false);
 	}
 
 }

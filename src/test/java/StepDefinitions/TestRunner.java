@@ -1,6 +1,9 @@
 package StepDefinitions;
 
+import java.io.IOException;
+
 import org.example.BaseSetup;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 
@@ -20,8 +23,13 @@ monochrome = true,strict = true,
 plugin = {"pretty" , "html:target/HtmlReports",
 		"json:target/JsonReports/report.json",
 		"junit:target/JunitReports/report.xml"},
-tags="@APITests")
+tags="@APITests ")
 public class TestRunner extends BaseSetup{
 
+	@BeforeClass
+	public static void setup() throws IOException
+	{
+		BaseSetup.baseConfigurationSetup();
+	}
 
 }

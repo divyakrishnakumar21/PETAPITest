@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="0.232">
-<testcase classname="Test all Journey planner API" name="As a user I create a new PET" time="0.065">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="2.58">
+<testcase classname="Test Pet creation API" name="As a user I create a new PET" time="2.049">
 <system-out><![CDATA[Given I create a new PET with name 'dog' and type 'hound' and age 3.........passed
 Then I check if the PET with name 'dog' has been added into the list of Pets.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test all Journey planner API" name="As a user I create a new PET and modify its age" time="0.011">
+<testcase classname="Test Pet creation API" name="As a user I create a new PET and modify its age" time="0.111">
 <system-out><![CDATA[Given I create a new PET with name 'dog1' and type 'hound1' and age 3.......passed
 Then I check if the PET with name 'dog1' has been added into the list of Pets.passed
-When Update the PET 'dog1' with age 4.......................................passed
-Then validate if the PET with name 'dog' has its age updated to 4...........passed
+Then Update the PET 'dog1' and type 'hound1' with age 4.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test all Journey planner API" name="As a user I create a new PET" time="0.006">
+<testcase classname="Test Pet creation API" name="As a user I create a new PET" time="0.048">
 <system-out><![CDATA[Given I create a new PET with name 'dog2' and type 'hound2' and age 4.......passed
 Then I check if the PET with name 'dog2' has been added into the list of Pets.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test all Journey planner API" name="As a user I create a new PET 2" time="0.003">
+<testcase classname="Test Pet creation API" name="As a user I create a new PET 2" time="0.041">
 <system-out><![CDATA[Given I create a new PET with name 'cat' and type 'tiger' and age 5.........passed
 Then I check if the PET with name 'cat' has been added into the list of Pets.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test all Journey planner API" name="As a user I create a new PET 3" time="0.003">
+<testcase classname="Test Pet creation API" name="As a user I create a new PET 3" time="0.041">
 <system-out><![CDATA[Given I create a new PET with name 'snake' and type 'reptile' and age 25....passed
 Then I check if the PET with name 'snake' has been added into the list of Pets.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test all Journey planner API" name="As a user I create a new PET 4" time="0.001">
+<testcase classname="Test Pet creation API" name="As a user I create a new PET 4" time="0.036">
 <system-out><![CDATA[Given I create a new PET with name 'rabbit' and type 'white' and age 1......passed
 Then I check if the PET with name 'rabbit' has been added into the list of Pets.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test all Journey planner API" name="As a user I create a new PET and delete it" time="0.004">
+<testcase classname="Test Pet creation API" name="As a user I create a new PET and delete it" time="0.117">
 <system-out><![CDATA[Given I create a new PET with name 'dog3' and type 'hound3' and age 3.......passed
-Then I check if the PET with name 'dog3' has been added into the list of Pets.passed
+Then I check if the PET with name 'dog' has been added into the list of Pets.passed
 When I delete the pet with name 'dog3'......................................passed
 Then I validate if the pet with name 'dog3' has been deleted................passed
 ]]></system-out>
